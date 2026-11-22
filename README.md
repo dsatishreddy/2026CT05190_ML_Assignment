@@ -56,16 +56,16 @@ Five classifiers – Logistic Regression, Decision Tree, k-Nearest Neighbours, G
 
 ## 3. GitHub repository link
 
-**https://github.com/dsatishreddy/ml-assignment-2-classification**
+**https://github.com/dsatishreddy/2026CT05190_ML_Assignment**
 
 ```
-ml-assignment-2-classification/
+2026CT05190_ML_Assignment/
 │-- README.md
 │-- requirements.txt
 │-- test_data.csv                 # the 20% held-out test split (9,758 rows, raw features + target)
 │-- data/                         # original UCI files: adult.data, adult.test, adult.names
 │-- model/
-│   │-- ML_Assignment_2_Classification.ipynb   # full executed notebook (EDA → models → results)
+│   │-- 2026CT05190_ML_Assignment2.ipynb   # full executed notebook (EDA → models → results)
 │   │-- pipeline_utils.py         # loading, cleaning, split, preprocessing, metrics
 │   │-- models.py                 # the 5 classifiers and their search grids
 │   │-- train_models.py           # trains/tunes/evaluates/saves all models + plots
@@ -77,15 +77,15 @@ ml-assignment-2-classification/
 ### How to run
 
 ```bash
-git clone https://github.com/dsatishreddy/ml-assignment-2-classification.git
-cd ml-assignment-2-classification
+git clone https://github.com/dsatishreddy/2026CT05190_ML_Assignment.git
+cd 2026CT05190_ML_Assignment/
 pip install -r requirements.txt
 
 python model/train_models.py      # trains + evaluates all 5 models (~7 min on 2 CPUs), writes results/ and saved_models/
 python model/predict.py           # reproduces the metrics from the saved .pkl models and test_data.csv
 
 # or open the notebook
-jupyter notebook model/ML_Assignment_2_Classification.ipynb
+jupyter notebook model/2026CT05190_ML_Assignment2.ipynb
 ```
 
 If the `data/` files are missing, they are downloaded automatically from UCI.
