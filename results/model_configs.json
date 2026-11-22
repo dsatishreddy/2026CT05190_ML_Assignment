@@ -1,0 +1,47 @@
+{
+  "Logistic Regression": {
+    "best_params": {
+      "C": 0.1
+    },
+    "cv_roc_auc": 0.9041,
+    "train_and_tune_seconds": 10.1,
+    "saved_as": "model/saved_models/logistic_regression.pkl"
+  },
+  "Decision Tree": {
+    "best_params": {
+      "criterion": "gini",
+      "max_depth": 10,
+      "min_samples_leaf": 60
+    },
+    "cv_roc_auc": 0.9044,
+    "train_and_tune_seconds": 33.5,
+    "saved_as": "model/saved_models/decision_tree.pkl"
+  },
+  "kNN": {
+    "best_params": {
+      "n_neighbors": 31,
+      "weights": "uniform"
+    },
+    "cv_roc_auc": 0.8965,
+    "train_and_tune_seconds": 43.1,
+    "saved_as": "model/saved_models/knn.pkl"
+  },
+  "Naive Bayes": {
+    "best_params": {
+      "var_smoothing": 0.1
+    },
+    "cv_roc_auc": 0.8837,
+    "train_and_tune_seconds": 4.8,
+    "saved_as": "model/saved_models/naive_bayes.pkl"
+  },
+  "Random Forest (Ensemble)": {
+    "best_params": {
+      "max_depth": 14,
+      "max_features": 0.3,
+      "min_samples_leaf": 2
+    },
+    "cv_roc_auc": 0.9184,
+    "train_and_tune_seconds": 275.6,
+    "saved_as": "model/saved_models/random_forest_ensemble.pkl"
+  }
+}
